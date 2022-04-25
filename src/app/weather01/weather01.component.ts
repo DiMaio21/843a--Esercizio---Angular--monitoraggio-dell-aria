@@ -33,6 +33,7 @@ export class Weather01Component implements OnInit, OnDestroy  {
     let observable=this.serv01.httpGet(this.apiEndpoint)
     this.subscription=observable.subscribe( httpResponse => { console.log(httpResponse); this.setWeatherData(httpResponse) })
   }
+  
   setWeatherData(data: any) {
     ?
     ?
